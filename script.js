@@ -8,6 +8,7 @@ function display(text,delay){
 	return new Promise(()=>{
 		setTimeout(()=>{
 			output.innerText = text;
+			resolve();
 		},delay)
 	})
 }
