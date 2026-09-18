@@ -5,7 +5,7 @@ let output = document.querySelector("#output");
 
 
 function display(text,delay){
-	return new Promise(()=>{
+	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			output.innerText = text;
 			resolve();
